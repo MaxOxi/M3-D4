@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+    <title>Travel PAge</title>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+
+        #summer .card {
+            -webkit-box-shadow: 12px 10px 12px 5px rgba(0,0,0,0.48) ;
+            box-shadow: 12px 10px 12px 5px rgba(0,0,0,0.48)
+        }
+
+     
+    
+    </style>
+
+</head>
+
+
+<body class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark position-relative">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">Iscriviti</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- jumbotrom -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 pt-2" >
+                <div class="h-100 p-5 bg-light border rounded-3">
+                    <h2>Risparmia subito con Traveling</h2>
+                    <p>Approfitta delle tariffe per soli iscritti e risparmia in media il 15% su migliaia di hotel...</p>
+                    <button class="btn btn-outline-secondary" type="button"> Inizia a cercare </button>
+                </div>
+            </div>
+        </div> <!-- row -->
+    <div> <!-- Conteainer Closed -->
+         
+
+    
+
+    <div class="container"   >    
+        <div class="row">
+            <h3 class="text-left"> Offerte della settimana!</h3>
+        </div>
+
+        <button type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#divweekofer" aria-controls="divweekofer" aria-expanded="false" >Mostra</button>
+        <div id="divweekofer" class="collapse">
+
+            <div class="row">  <!-- row per tutto il conteiner -->
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 "> 
+                    <div class="card" >
+                        <img src="paris 6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Francia</h5>
+                            <p class="card-text">La città dell'amore e dell'eleganza e della moda...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, tre giorni</li>
+                            <li class="list-group-item">500€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+            
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3"> 
+                    <div class="card" >
+                        <img src="messico.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Messico</h5>
+                            <p class="card-text">Un posto dove toccare l'antichità con le tue mani...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, due giorni</li>
+                            <li class="list-group-item">350€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+               
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3"> 
+                    <div class="card" >
+                        <img src="india.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">India</h5>
+                            <p class="card-text">Esperienzea in India che non puoi avere da nessun'altra parte</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, quattro giorni</li>
+                            <li class="list-group-item">A second item</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+               
+            
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3"> 
+                    <div class="card" >
+                        <img src="timessquare.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">Hai l'occasione di andare nella piazza più famosa al mondo...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, 2 giorni</li>
+                            <li class="list-group-item">950€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+         
+            </div> <!-- row -->
+        </div> <!-- collapse -->
+
+    </div> <!-- container Offerte della settimana -->
+        
+    
+     
+    <div class="container" id="summer" >    
+        <div class="row">
+            <h3 class="text-left">Welcome Summer!</h3>
+        </div>
+
+        <button type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#divsummerofer" aria-expanded="true" aria-controls="divsummerofer">Mostra</button>
+        <div  class="container collapse " id="divsummerofer">
+            <div class="row">  <!-- row per tutto il conteiner -->
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <div class="card" >
+                        <img src="italia.dolomiti.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Italia</h5>
+                            <p class="card-text">Le montagne italiane come non le hai mai viste...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, due giorni</li>
+                            <li class="list-group-item">350€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+            
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <div class="card" >
+                        <img src="Peru.Colibri.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Peru</h5>
+                            <p class="card-text">Storia e natura nello stesso posto..</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, tre giorni</li>
+                            <li class="list-group-item">650€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+               
+            
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <div class="card" >
+                        <img src="marocco.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marocco</h5>
+                            <p class="card-text">Le montagne e il deserto allo stesso tempo...</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, tre giorni</li>
+                            <li class="list-group-item">700€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <div class="card" >
+                        <img src="thailandia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Thainlandia</h5>
+                            <p class="card-text">Un posto dove regna la pace, tra tempi e verde ..</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, due giorni</li>
+                            <li class="list-group-item">350€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+            
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <div class="card" >
+                        <img src="egitto.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Egitto</h5>
+                            <p class="card-text">Deserto, arrido ma bellissimo allo stesso tempo..</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, tre giorni</li>
+                            <li class="list-group-item">650€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+               
+            
+                <div class="col-6 col-sm-6 col-md-4 col-lg-2"> 
+                    <div class="card" >
+                        <img src="grecia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Grecia</h5>
+                            <p class="card-text">Acqua cristalline, un paradiso blu per gli occhi .. </p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">2 persone, tre giorni</li>
+                            <li class="list-group-item">600€</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Parti ora..</a>
+                        </div>
+                    </div> <!-- card -->
+                </div> <!-- col -->
+
+            </div> <!-- row -->
+ 
+        </div> <!-- collapse -->
+
+    </div> <!-- container "Welcome summer" -->
+    
+            
+    <div class="container flex-row" id="dayoffer" >  <!-- container Offerta del giorno -->
+        <h3 class="text-left"> Offerta del giorno!</h3>
+        <div class="row">
+            <div class="d-none d-sm-block  ">
+                <img src="vacanze-caraibi.jpg" class="img-responsive col-8" alt="...">
+            </div>  
+            <div class="d-none d-sm-block  col-8 d-flex"   id="textdayoffer" >                 
+                <h5 >Caraibi</h5>
+                <p> 3 persone</p>
+                <p>1300€</p>
+                <p>5 notti!</p>   
+            </div>
+             
+        </div>  <!-- row -->
+
+    </div> <!-- container offerta del giorno -->
+
+      
+    <div class="container">    
+        <div class="row">
+            <h3 class="text-left">Last Minute!</h3>
+        </div>
+        <p>
+        <button type="button" class="btn btn-primary"  data-bs-toggle="collapse" data-bs-target="#divlastmin" aria-expanded="true" aria-controls="divlastmin">Mostra</button>
+        </p>
+        <div id="divlastmin" class="collapse">
+            <div class="row">  <!-- row per tutto il conteiner -->
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 "> 
+                    <div class="card" >
+                        <img src="slovenia 1.jpg" class="card-img" alt="...">
+                    </div> <!-- card -->
+                </div> <!-- col -->
+            
+
+
+            
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 "> 
+                    <div class="card" >
+                        <img src="Norvegia.jpg" class="card-img" alt="...">
+                    </div> <!-- card -->
+                </div> <!-- col -->
+            
+             
+
+
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 "> 
+                    <div class="card" >
+                        <img src="croatia1.jpg" class="card-img" alt="...">
+                    </div> <!-- card -->
+                </div> <!-- col -->
+            </div> <!-- row end-->
+
+        </div> <!-- collapse -->
+
+    </div> <!-- container "LAst minute" -->     
+    
+    <!-- Reviews--> 
+    <section>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 col-xl-8 text-center">
+            <h3 class="mb-4">Testimonials</h3>
+          </div>
+        </div>
+      
+        <div class="row text-center">
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="avatar0.png"
+                class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3">John Smith</h5>
+            <p class="px-xl-3">
+              <i class="fas fa-quote-left pe-2"></i>Mi sono trovato molto bene, è stato organizzato tutto nel minimo dettaglio.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-5 mb-md-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="avatar1.jpg"
+                class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3">Luis Cudrow</h5>
+            <p class="px-xl-3">
+              <i class="fas fa-quote-left pe-2"></i>Sicuramente tornerò a viaggiare con voi dopo la bellissima esperienza.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-0">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="avatar2.jpg"
+                class="rounded-circle shadow-1-strong" width="150" height="150" />
+            </div>
+            <h5 class="mb-3">Maria Smantha</h5>
+            <p class="px-xl-3">
+              <i class="fas fa-quote-left pe-2"></i>E' stato un bel viaggio, mi hanno seguito sempre.
+            </p>
+            <ul class="list-unstyled d-flex justify-content-center mb-0">
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="fas fa-star fa-sm text-warning"></i>
+              </li>
+              <li>
+                <i class="far fa-star fa-sm text-warning"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-center p-4 border-bottom">
+            <!-- Right -->
+            <div>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <!-- Right -->
+          </section>
+          <!-- Section: Social media -->
+        
+          <!-- Section: Links  -->
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Traveling 
+                  </h6>
+                  <p>
+                      Siamo un'agenzia che si ocupa di viaggi, ti organizziamo 
+                      il tuo viaggio dalla a alla z.
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+        
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Links
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Facebook</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Twitter</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Instagram</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Youtube</a>
+                  </p>
+                </div>
+                <!-- Grid column -->
+        
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">Contattaci</h6>
+                  <p><i class="fas fa-home me-3"></i> Milano, FINETTI 45</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@traveling.com
+                  </p>
+                  <p><i class="fas fa-phone me-3"></i> + 0721 569845</p>
+                  <p><i class="fas fa-print me-3"></i> + 3554857985</p>
+                </div>
+                <!-- Grid column -->
+              </div>
+              <!-- Grid row -->
+            </div>
+          </section>
+          <!-- Section: Links  -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2023 Copyright
+          </div>
+          <!-- Copyright -->
+    </footer>
+    <!-- Footer Closed -->
+   
+              
+    
+            
+
+
+
+  
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
